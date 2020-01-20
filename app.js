@@ -34,9 +34,9 @@ if (isYes(isDog) === true) {
     correctGuesses++;
 }
 
-//if (isYes(isDog) === false) {
-//    correctPercent = correctPercent - 25;
-//};
+if (isYes(isDog) === false) {
+    correctPercent = correctPercent - 25;
+};
 
 //question Two
 const isFantasy = prompt("The second question is: Is fantasy my favorite genre?");
@@ -44,9 +44,9 @@ const isFantasy = prompt("The second question is: Is fantasy my favorite genre?"
 if (isYes(isFantasy) === true) {
     correctGuesses++;
 } 
-//else if (isYes(isFantasy) === false) {
-//    correctPercent = correctPercent - 25;
-//};
+else if (isYes(isFantasy) === false) {
+    correctPercent = correctPercent - 25;
+};
 
 //question Three
 const isJazz = prompt("The third question is: Is jazz my favorite music?");
@@ -54,9 +54,9 @@ const isJazz = prompt("The third question is: Is jazz my favorite music?");
 if (isYes(isJazz) === false) {
     correctGuesses++;
 }
-//else if (isYes(isJazz) === true) {
-//    correctPercent = correctPercent - 25;
-//};
+else if (isYes(isJazz) === true) {
+    correctPercent = correctPercent - 25;
+};
 
 //queston Four
 
@@ -65,15 +65,17 @@ const isGuitar = prompt("The fourth queston is: Is guitar my favorite instrument
 if (isYes(isGuitar) === true) {
     correctGuesses++;
 }
-//else if (isYes(isGuitar) === false) {
-//    correctPercent = correctPercent - 25;
-//};
+else if (isYes(isGuitar) === false) {
+    correctPercent = correctPercent - 25;
+};
+
+
 
 results.textContent = 'Hey! You got ' + correctGuesses + ' correct!';
 
-//percentage.textContent = 'Your quiz grade is ' + correctPercent + '%';
+percentage.textContent = 'Your quiz grade is ' + correctPercent + '%';
 
-//resultTest.textContent = isDog + isFantasy + isJazz;
+document.getElementById('resultsPage').style.display = 'block';
 
 });
 

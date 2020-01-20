@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers&display=swap');
+
+h1 { 
+     font-family: 'Bangers', cursive;
+}
+
+body {
+    background: linear-gradient(to left, white, skyblue);
+    text-align: center;
+}
+
+img {
+    padding: 15px;
+    border: solid black 15px;
+}
+
+#aboutMe {
+    padding: 15px 75px 15px 75px;
+}
+
+#resultsPage {
+    font-family: 'Bangers', cursive;
+    margin-top: 25px;
+    padding: 15px 75px 15px 75px;
+    border: solid black 15px;
+    display: hidden;
+}
